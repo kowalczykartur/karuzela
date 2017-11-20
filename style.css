@@ -1,0 +1,48 @@
+#carousel {
+    margin: 0 auto;
+    width: 400px;
+    height: 300px;
+    border: 1px solid grey;
+    overflow: hidden; 
+}
+#carousel ul {
+    width: 2000px;
+    margin: 0;
+    padding: 0;
+}
+#carousle li {
+    float: left;
+    list-style-type: none;
+    width: 400px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
+#container {
+    position: relative;
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+}
+.arrow-left {
+    position: absolute;
+    top: 150px;
+    left: -20px;
+}
+.arrow-right {
+    position: absolute;
+    top: 150px;
+    right: -20px;
+}
+#dots {
+    position: absolute;
+    bottom: 20px;
+    left: 140px;
+    
+}
+#dots i{
+    opacity: 0.5;
+}
+#dots i.active{
+    opacity: 1;
+}
