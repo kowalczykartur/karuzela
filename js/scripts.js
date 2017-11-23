@@ -1,7 +1,8 @@
 $(function(){
+    var carouselDiv = $("#carousel");
      var slideIndex = 1;
 	var carouselList = $("#carousel ul");
-    setInterval(changeSlide, 3000);
+    var carousel = setInterval(changeSlide, 4000);
     function changeSlide(slideNumber) {
         if (slideNumber){
             carouselList.animate({'marginLeft':0}, 100, moveFirstSlide);
@@ -52,6 +53,16 @@ $(function(){
     var clickedDot = $(this).index() +1;
     console.log('Klikniete', clickedDot);
         changeSlide(clickedDot);
+});
+    
+ carouselDiv.mouseover(function(){
+    clearInterval(carousel);
+     console.log('Najechana na karuzele');
+});
+
+  carouselDiv.on('mouseout', 'img',
+          function pusc() {
+     carosuel = setInterval(changeSlide, 4000);
 });
     
 });
