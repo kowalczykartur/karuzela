@@ -3,16 +3,22 @@
     width: 400px;
     height: 300px;
     border: 1px solid grey;
-    overflow: hidden; 
+   overflow: hidden;
+     
+}
+#carousel img {
+    width: 400px;
+    height: 300px;
 }
 #carousel ul {
     width: 2000px;
+    height: 300px;
     margin: 0;
     padding: 0;
-}
-#carousle li {
-    float: left;
     list-style-type: none;
+}
+#carousel li {
+    float: left;    
     width: 400px;
     height: 300px;
     margin: 0;
